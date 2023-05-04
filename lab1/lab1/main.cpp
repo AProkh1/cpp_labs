@@ -27,17 +27,17 @@ int main() {
     int rows = 3;
     int cols = 4;
 
-    // create a vector of vectors
+    // Вектор векторов для матрицы
     vector<vector<int>> matrix(rows, vector<int>(cols));
 
-    // fill the matrix with values
+    // Заполнение матрицы
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             matrix[i][j] = i * cols + j;
         }
     }
 
-    // print the matrix
+    // Вывод матрицы
     for (int i = 0; i < rows; i++) {
         for (int j = 0; j < cols; j++) {
             std::cout << matrix[i][j] << " ";
